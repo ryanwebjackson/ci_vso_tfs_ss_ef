@@ -1,7 +1,7 @@
 # Continuous Integration - Managing schema changes when using SQL Server and Entity Framework
 ## General Plan for Continuous Integration with Microsoft Team Foundation Server (TFS), Visual Studio Online (VSO), SQL Server (SS), and Entity Framework (EF).
 
-*rough outline*
+*rough outline*  
 1. Script (existing) database schema - Can be done manually with SSMS, but the goal of this project is to do it consistently and reliably (via the command line).  
 2. Check-in script(s) with related code (back-end, etc.) changes.  
 3. Utilize Visual Studio Online (VSO), or another CI server, to spin up a an empty, temporary database, based on checked in scripts (in a specific directory).  
